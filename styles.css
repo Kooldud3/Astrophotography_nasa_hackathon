@@ -75,3 +75,39 @@ main {
 
 .card p {
     font-size: 1.1em
+}
+/* Styling for Cards */
+.card {
+    display: flex;  /* Flexbox for side-by-side layout */
+    background-color: #1B263B;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    align-items: center;  /* Align content vertically */
+}
+
+/* Styling for Images */
+.object-img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;  /* Space between image and text */
+    border-radius: 8px;
+    object-fit: cover;  /* Ensures image maintains aspect ratio */
+}
+
+/* Styling for Card Content */
+.card-content {
+    max-width: 600px;  /* Adjust as needed based on layout */
+}
+
+.card h3 {
+    font-size: 1.8em;
+    color: #FF6F61;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
