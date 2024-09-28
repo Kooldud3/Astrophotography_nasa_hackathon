@@ -62,15 +62,9 @@ p {
     flex: 1 1 calc(33.333% - 20px); /* Three cards per row */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start;
     align-items: center;
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 10px;
 }
 
 .card h3 {
@@ -78,6 +72,13 @@ p {
     color: #FF6F61;
     margin-bottom: 10px;
     text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
 }
 
 .card p {
