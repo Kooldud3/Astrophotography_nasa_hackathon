@@ -1,6 +1,6 @@
-/* General Styles */
+/* General Styling for the Page */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #0D1B2A;
@@ -8,74 +8,38 @@ body {
 }
 
 header {
-    background-image: url('astrophotography-header.jpg'); /* Use an astrophotography image */
-    background-size: cover;
-    background-position: center;
-    padding: 4em 0;
     text-align: center;
-    color: white;
+    padding: 40px 20px;
+    background-color: #1B263B;
+    color: #FFF;
 }
 
 header h1 {
     font-size: 3em;
-    margin-bottom: 0.2em;
+    margin: 0;
+    color: #FF6F61;
 }
 
 header p {
-    font-size: 1.3em;
-    font-weight: 400;
+    font-size: 1.2em;
+    margin-top: 10px;
 }
 
-main {
-    padding: 40px 20px;
+/* Section Title Styling */
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #FF6F61;
+}
+
+/* Container for the Cards Section */
+#capture-objects {
+    padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.section {
-    margin-bottom: 3em;
-    text-align: center;
-}
-
-.section h2 {
-    font-size: 2.5em;
-    margin-bottom: 1em;
-    color: #FF6F61;
-}
-
-.section p {
-    font-size: 1.1em;
-    line-height: 1.6;
-}
-
-.card-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.card {
-    background-color: #1B263B;
-    padding: 20px;
-    border-radius: 10px;
-    width: 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card h3 {
-    font-size: 1.8em;
-    color: #FF6F61;
-}
-
-.card p {
-    font-size: 1.1em
-}
 /* Styling for Cards */
 .card {
     display: flex;  /* Flexbox for side-by-side layout */
@@ -101,13 +65,34 @@ main {
     max-width: 600px;  /* Adjust as needed based on layout */
 }
 
+/* Styling for Card Headings */
 .card h3 {
     font-size: 1.8em;
     color: #FF6F61;
     margin-bottom: 10px;
 }
 
+/* Styling for Card Paragraphs */
 .card p {
     font-size: 1.1em;
     line-height: 1.6;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;  /* Stack image on top of text for smaller screens */
+        text-align: center;
+    }
+    
+    .object-img {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 100%;
+        max-width: 300px;  /* Set a max-width to prevent oversized images on small screens */
+    }
+    
+    .card-content {
+        max-width: 100%;
+    }
 }
