@@ -1,4 +1,4 @@
-/* General Styling for the Page */
+/* General styling for the page */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -7,6 +7,7 @@ body {
     color: #E0E1DD;
 }
 
+/* Styling for the header */
 header {
     text-align: center;
     padding: 40px 20px;
@@ -25,7 +26,7 @@ header p {
     margin-top: 10px;
 }
 
-/* Section Title Styling */
+/* Section title styling */
 h2 {
     text-align: center;
     font-size: 2.5em;
@@ -33,65 +34,63 @@ h2 {
     color: #FF6F61;
 }
 
-/* Container for the Cards Section */
+/* Container for the cards section */
 #capture-objects {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Styling for Cards */
+/* Styling for the cards */
 .card {
-    display: flex;  /* Flexbox for side-by-side layout */
+    display: flex;
     background-color: #1B263B;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
-    align-items: center;  /* Align content vertically */
+    align-items: center;
 }
 
-/* Styling for Images */
+/* Styling for images */
 .object-img {
     width: 150px;
     height: auto;
-    margin-right: 20px;  /* Space between image and text */
+    margin-right: 20px;
     border-radius: 8px;
-    object-fit: cover;  /* Ensures image maintains aspect ratio */
+    object-fit: cover;
 }
 
-/* Styling for Card Content */
+/* Styling for card content */
 .card-content {
-    max-width: 600px;  /* Adjust as needed based on layout */
+    max-width: 600px;
 }
 
-/* Styling for Card Headings */
 .card h3 {
     font-size: 1.8em;
     color: #FF6F61;
     margin-bottom: 10px;
 }
 
-/* Styling for Card Paragraphs */
 .card p {
     font-size: 1.1em;
     line-height: 1.6;
 }
 
-/* Responsive Design for Small Screens */
+/* Responsive design for small screens */
 @media (max-width: 768px) {
     .card {
-        flex-direction: column;  /* Stack image on top of text for smaller screens */
+        flex-direction: column;
         text-align: center;
     }
-    
+
     .object-img {
         margin-right: 0;
         margin-bottom: 15px;
         width: 100%;
-        max-width: 300px;  /* Set a max-width to prevent oversized images on small screens */
+        max-width: 300px;
     }
-    
+
     .card-content {
         max-width: 100%;
     }
