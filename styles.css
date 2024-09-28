@@ -7,7 +7,6 @@ body {
     color: #E0E1DD;
 }
 
-/* Styling for the header */
 header {
     text-align: center;
     padding: 40px 20px;
@@ -34,14 +33,14 @@ h2 {
     color: #FF6F61;
 }
 
-/* Container for the cards section */
+/* Container for the celestial objects section */
 #capture-objects {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Styling for the cards */
+/* Styling for cards */
 .card {
     display: flex;
     background-color: #1B263B;
@@ -50,6 +49,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
     align-items: center;
+    flex-wrap: wrap;  /* Ensure proper wrapping if items overflow */
 }
 
 /* Styling for images */
@@ -59,11 +59,14 @@ h2 {
     margin-right: 20px;
     border-radius: 8px;
     object-fit: cover;
+    flex-shrink: 0;  /* Prevent image from shrinking */
 }
 
-/* Styling for card content */
+/* Card content */
 .card-content {
+    flex-grow: 1;  /* Allow text to grow and take up remaining space */
     max-width: 600px;
+    word-wrap: break-word;  /* Ensure text wraps and doesn’t overflow */
 }
 
 .card h3 {
@@ -77,7 +80,7 @@ h2 {
     line-height: 1.6;
 }
 
-/* Responsive design for small screens */
+/* Responsive layout for small screens */
 @media (max-width: 768px) {
     .card {
         flex-direction: column;
@@ -88,7 +91,7 @@ h2 {
         margin-right: 0;
         margin-bottom: 15px;
         width: 100%;
-        max-width: 300px;
+        max-width: 300px;  /* Ensure images don’t stretch too large */
     }
 
     .card-content {
