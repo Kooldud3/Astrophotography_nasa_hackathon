@@ -61,22 +61,28 @@ p {
     padding: 20px;
     flex: 1 1 calc(33.333% - 20px); /* Three cards per row */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card img {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    margin-top: 10px;
 }
 
 .card h3 {
     font-size: 1.5rem;
     color: #FF6F61;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .card p {
     font-size: 1rem;
+    text-align: center;
 }
 
 /* List Styles */
